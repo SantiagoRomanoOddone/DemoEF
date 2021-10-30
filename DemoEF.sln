@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsF", "WindowsF\WindowsF.csproj", "{826A7567-1BD0-4145-8CB4-AD0F125DA6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBVentas", "DBVentas\DBVentas.csproj", "{B56B5427-047C-4B17-95C2-02280FCBAC9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{5A365689-1142-477C-A807-FFFDF42372A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{826A7567-1BD0-4145-8CB4-AD0F125DA6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826A7567-1BD0-4145-8CB4-AD0F125DA6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826A7567-1BD0-4145-8CB4-AD0F125DA6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826A7567-1BD0-4145-8CB4-AD0F125DA6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56B5427-047C-4B17-95C2-02280FCBAC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56B5427-047C-4B17-95C2-02280FCBAC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56B5427-047C-4B17-95C2-02280FCBAC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56B5427-047C-4B17-95C2-02280FCBAC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A365689-1142-477C-A807-FFFDF42372A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A365689-1142-477C-A807-FFFDF42372A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A365689-1142-477C-A807-FFFDF42372A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A365689-1142-477C-A807-FFFDF42372A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94576D26-D2E6-4A4A-B941-0630D43F858F}
+	EndGlobalSection
+EndGlobal
