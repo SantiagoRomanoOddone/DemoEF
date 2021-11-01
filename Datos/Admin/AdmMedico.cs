@@ -14,7 +14,7 @@ namespace Datos.Admin
         public static List<Medico> Listar()
         {
 
-            return context.Medicos.ToList(); // con esto retornamos todos los pacientes
+            return context.Medicos.ToList(); // con esto retornamos todos los medicos
         }
         public static List<Medico> ListarEspecialidadId(int especialidadId)
         {
@@ -25,10 +25,19 @@ namespace Datos.Admin
 
             return medicos;
         }
-        public  static Medico TraerPorId(int id)
+        public static List<Medico> ListarId(int medicoId)
         {
-            return context.Medicos.Find(id);
+            // linq to entities
+            List<Medico> medicos = (from m in context.Medicos
+                                    where m.MedicoId == medicoId
+                                    select m).ToList(); // eso es el quivalente al metodo TOLIST. Esta Query trae todos los medicos de esa especialidad
+            return medicos;
         }
+
+        //public static Medico TraerPorId(int medicoId)
+        //{
+        //    return context.Medicos.Find(medicoId);
+        //}
         public static int Insertar(Medico medico)
         {
             context.Medicos.Add(medico);

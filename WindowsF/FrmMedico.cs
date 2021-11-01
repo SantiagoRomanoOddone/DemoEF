@@ -24,6 +24,7 @@ namespace WindowsF
             TraerMedicos();
             llenarComboEspecialidad();
             llenarComboTraerEspecialidad();
+            llenarComboId();
         }
         private void TraerMedicos()
         {
@@ -50,6 +51,14 @@ namespace WindowsF
             cbBuscarEspecialidad.ValueMember = "EspecialidadId";
 
         }
+        private void llenarComboId()
+        {
+            List<Medico> medicos = AdmMedico.Listar();
+            cbBuscarId.DataSource = medicos;
+            cbBuscarId.DisplayMember = "MedicoId";
+            cbBuscarId.ValueMember = "MedicoId";
+
+        }
 
         private void cbBuscarEspecialidad_SelectionChangeCommitted(object sender, EventArgs e)
         {
@@ -62,6 +71,12 @@ namespace WindowsF
             {
                 gridMedicos.DataSource = AdmMedico.ListarEspecialidadId(especialidad);
             }
+        }
+        private void cbBuscarId_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            int Id = Convert.ToInt32(cbBuscarId.SelectedValue);
+            gridMedicos.DataSource = AdmMedico.ListarId(Id);
+
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
@@ -77,6 +92,7 @@ namespace WindowsF
             if (filasAfectadas > 0)
             {
                 TraerMedicos();
+                llenarComboId();
             }       
         
         }
@@ -95,6 +111,7 @@ namespace WindowsF
             if (filasAfectadas > 0)
             {
                 TraerMedicos();
+               
             }
 
         }
@@ -109,8 +126,10 @@ namespace WindowsF
                 // Para este ejemplo no haria falta pero nunca está de más 
                 llenarComboEspecialidad();
                 llenarComboTraerEspecialidad();
+                llenarComboId();
             }
         }
 
+        
     }
 }

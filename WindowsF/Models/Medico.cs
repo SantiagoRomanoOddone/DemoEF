@@ -17,6 +17,8 @@ namespace WindowsF.Models
         public int Matricula { get; set; }
         public  int EspecialidadId { get; set; }
         public Especialidad Especialidad { get; set; }
+        
+
         [ForeignKey("EspecialidadId")]
         //asi transformo a propiedad de navegación
         public List<Paciente> Pacientes { get; set; }

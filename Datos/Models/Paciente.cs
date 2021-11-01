@@ -23,12 +23,11 @@ namespace Datos.Models
         [Column(TypeName = "date")]
         public DateTime FechaNacimiento { get; set; }
         public int NroHistoriaClinica { get; set; }
-
         public int MedicoId { get; set; } // FK clave externa
 
         // Propiedad de nagevación 
         [ForeignKey("MedicoId")]
-        // vamos a hacer la navegación de uno a muchos
         public Medico Medico { get; set; }
+
     }
 }

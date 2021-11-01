@@ -17,8 +17,7 @@ namespace Datos.Models
         [Required]
         [Column(TypeName = "varchar")]
         [MaxLength(50)]
-        public string Nombre { get; set; }
-
+        public string Nombre { get; set; } 
         public List<Medico> medicos { get; set; }
 
     }

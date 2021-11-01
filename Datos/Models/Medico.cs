@@ -16,11 +16,12 @@ namespace Datos.Models
         public string Apellido { get; set; }
         public int Matricula { get; set; }
         public  int EspecialidadId { get; set; }
-       // public Especialidad Especialidad { get; set; }
-        //[ForeignKey("EspecialidadId")]
-        //asi transformo a propiedad de navegación
+
+        // Prop de Navegación 
+        [ForeignKey("EspecialidadId")]
+        public Especialidad Especialidad { get; set; }
+
         public List<Paciente> Pacientes { get; set; }
-       
-        
+
     }
 }

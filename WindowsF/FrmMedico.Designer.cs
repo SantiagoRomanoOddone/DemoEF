@@ -45,6 +45,8 @@ namespace WindowsF
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbBuscarId = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridMedicos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,7 +145,7 @@ namespace WindowsF
             this.cbBuscarEspecialidad.FormattingEnabled = true;
             this.cbBuscarEspecialidad.Location = new System.Drawing.Point(271, 171);
             this.cbBuscarEspecialidad.Name = "cbBuscarEspecialidad";
-            this.cbBuscarEspecialidad.Size = new System.Drawing.Size(174, 21);
+            this.cbBuscarEspecialidad.Size = new System.Drawing.Size(121, 21);
             this.cbBuscarEspecialidad.TabIndex = 11;
             this.cbBuscarEspecialidad.SelectionChangeCommitted += new System.EventHandler(this.cbBuscarEspecialidad_SelectionChangeCommitted);
             // 
@@ -185,11 +187,31 @@ namespace WindowsF
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(107, 202);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Buscar Por Id";
+            // 
+            // cbBuscarId
+            // 
+            this.cbBuscarId.FormattingEnabled = true;
+            this.cbBuscarId.Location = new System.Drawing.Point(271, 198);
+            this.cbBuscarId.Name = "cbBuscarId";
+            this.cbBuscarId.Size = new System.Drawing.Size(121, 21);
+            this.cbBuscarId.TabIndex = 17;
+            this.cbBuscarId.SelectionChangeCommitted += new System.EventHandler(this.cbBuscarId_SelectionChangeCommitted);
+            // 
             // FrmMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbBuscarId);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnInsertar);
@@ -233,5 +255,7 @@ namespace WindowsF
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbBuscarId;
     }
 }
